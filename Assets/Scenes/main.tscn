@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdm8xwr6fif0w"]
+[gd_scene load_steps=14 format=3 uid="uid://cdm8xwr6fif0w"]
 
 [ext_resource type="Texture2D" uid="uid://jh0piix13eoi" path="res://Assets/Tilemaps/Cave/Placeholder.png" id="1_c4qib"]
 [ext_resource type="Script" path="res://Assets/Scenes/Dorf2D.cs" id="2_da0h0"]
 [ext_resource type="Texture2D" uid="uid://bhntky877iclw" path="res://Assets/Sprites/DorfWalkingLeft.png" id="3_lg8t6"]
+[ext_resource type="Script" path="res://Assets/Scenes/AnimatedWalkingSprite2D.cs" id="4_x1ych"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r0tk8"]
 texture = ExtResource("1_c4qib")
@@ -81,11 +82,11 @@ texture = SubResource("GradientTexture2D_0j26d")
 position = Vector2(33, 6)
 script = ExtResource("2_da0h0")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Dorf2D"]
-position = Vector2(498, 299)
+[node name="AnimatedWalkingSprite2D" type="AnimatedSprite2D" parent="Dorf2D"]
+position = Vector2(417, 299)
 sprite_frames = SubResource("SpriteFrames_ec7os")
 animation = &"DorfWalkingLeft"
-frame = 1
-frame_progress = 0.157267
+frame_progress = 0.195667
+script = ExtResource("4_x1ych")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dorf2D"]
